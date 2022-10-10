@@ -1,0 +1,142 @@
+body{
+    font-family: $font-sans;
+    color: $color-main;
+    letter-spacing: .1rem;
+    line-height: 2;
+}
+
+h2{
+    letter-spacing: .3rem;
+    font-size: 2rem;
+    padding: 2rem 0 1.5rem 0;
+}
+
+h3{
+    letter-spacing: .15rem;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+.hero-header{
+    .hero-title{
+        p{
+            font-weight: 700;
+            letter-spacing: .4rem;
+            @include mLarge{
+                letter-spacing: .6rem;
+            }
+                &:nth-of-type(1){
+                    font-size: 6rem;
+                    line-height: 1;
+                    @include large{
+                        font-size: 8rem;
+                    }
+                    @include mLarge{
+                        font-size: 10rem;
+                    }
+                }
+                &:nth-of-type(2){
+                    font-size: 3.5rem;
+                    padding-left: 3rem;
+                        @include large{
+                            font-size: 5rem;
+                        }
+                        @include mLarge{
+                            font-size: 6rem;
+                        }
+                }
+        }
+    }
+    .hero-message{
+        width: 70%;
+        padding-top: 2rem;
+    }
+    .hero-jp{
+        font-family: "Klee One", 'Times New Roman', Times, serif;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        letter-spacing: .2rem;
+    }
+}
+
+.blog{
+
+    .work-header{
+        p{
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: .5rem;
+            @include medium{
+                font-size: 4rem;
+            }
+            @include large{
+                font-size: 5rem;
+            }
+        }
+    }
+    .post-info{
+        h3{
+            line-height: 1;
+            @include large{
+                font-size: 1rem;
+                letter-spacing: .1rem;
+            }
+        }
+        .post-categories{
+            font-size: 1.2rem;
+            @include large{
+                font-size: .8rem;
+                letter-spacing: .05rem;
+            }
+        }
+    }
+}
+
+
+.category main{
+
+    .work-header{
+        p{
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: .5rem;
+        }
+
+        h2{
+           line-height: 1;
+           font-size: 1.5rem;
+            @include xLarge{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    h3{
+        padding-bottom: 0;
+        padding-top: .5rem;
+    }
+
+}
+
+footer{
+    color: white;
+}
+
+.page{
+
+    .contact-header{
+        p{
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: .5rem;
+            @include medium{
+                font-size: 4rem;
+            }
+            @include large{
+                font-size: 5rem;
+            }
+        }
+    }
+}

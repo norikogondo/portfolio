@@ -1,0 +1,398 @@
+.hero-header{
+    .hero-wrap{
+        padding: 0 2%;
+        position: relative;
+        // @include large{
+        //     padding: 0 0 0 2%;
+        // }
+
+        .hero-title{
+            padding-top: 5rem;
+        }
+        .hero-message{
+            padding-top: 4rem;
+            @include large{
+                width: 400px;
+                margin-left: 5rem;
+                padding-top: 2rem;
+            }
+            @include mLarge{
+                margin-left: 7rem;
+                width: 500px;
+            }
+            @include xLarge{
+                margin-left: 12rem;
+            }
+        }
+        .hero-jp{
+            position: relative;
+            bottom: 240px;
+            left: 90%;
+            @include medium{
+                left: 80%;
+                bottom: 160px;
+            }
+            @include large{
+                left: 74%;
+                bottom: 200px;
+            }
+            @include xLarge{
+                left: 70%;
+            }
+
+        }
+    }
+}
+
+.about{
+    margin-bottom: 10rem;
+    @include large{
+        margin-top: 10rem;
+    }
+    @include xLarge{
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+    }
+    .about-wrap{
+        padding: 0 2%;
+        @include mLarge{
+            display: flex;
+        }
+        .about-info{
+            @include mLarge{
+                padding-top: 6rem;
+            }
+            h2{
+                @include large{
+                    padding-left: 6rem;
+                }
+            }
+            p{
+                @include large{
+                    padding-left: 10rem;
+                    padding-right: 4rem;
+                }
+            }
+        }
+        
+    }
+
+}
+
+.work{
+    padding: 0 2%;
+    @include medium{
+        margin-bottom: 15rem;
+    }
+
+
+    h2{
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .button{
+        margin-bottom: 8rem;
+        @include large{
+            margin-top: 6rem;
+        }
+    }
+
+    article{
+        margin-bottom: 5rem;
+        @include large{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    
+        div.blog-img{
+            @include large{
+                width: 50%;
+            }
+        }
+        div.post-info{
+            @include large{
+                width: 50%;
+                padding: 0 4%;
+            }
+
+        }
+    
+        .blog-img{
+            margin-bottom: 2rem;
+            @include large{
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    article:nth-child(even) div:nth-of-type(1){
+        @include large{
+            order: 1;
+        }
+    
+    }
+
+
+}
+
+.blog main{
+    margin-bottom: 8rem;
+
+    @include large{
+        @include postGrid;
+    }
+    @include mLarge{
+        grid-gap: 4rem;
+    } 
+
+    article{
+        padding: 0 2% 5rem 2%;
+        @include large{
+            padding-bottom: 0;
+        }
+        .post-info{
+            h3{
+                padding-bottom: 0;
+                padding-top: 1rem;
+            }
+
+
+        }
+    }
+
+    
+}
+
+.work-header{
+    grid-column: -1/1;
+    justify-content: end;
+    margin: 0;
+    @include medium{
+        margin-bottom: 5rem;
+    }
+    @include large{
+        margin-bottom: 6rem;
+    }
+    @include mLarge{
+        margin-bottom: 7rem;
+    }
+    @include xLarge{
+        margin-bottom: 8rem;
+    }
+    p{
+        padding-top: 3.5rem;
+        padding-left: 1rem;
+        @include medium{
+            padding-top: 4rem;
+            padding-left: 2rem;
+        }
+        @include large{
+            padding-top: 5rem;
+        }
+        @include xLarge{
+            padding-top: 8rem;
+        }
+    }
+
+        
+}
+
+.category main{
+    @include large{
+        @include postGrid;
+    }
+
+    .work-header{
+        p{
+            padding-top: 2rem;
+            @include large{
+                padding-top: 5rem;
+            }
+            @include mLarge{
+                padding-top: 7rem;
+            }
+            @include xLarge{
+                padding-top: 9rem;
+            }
+        }
+
+        h2{
+           padding: 0 0 0 1rem; 
+           @include medium{
+                padding-left: 2rem;
+            }
+        }
+    }
+
+    section{
+        padding: 0 2%;
+        margin-bottom: 2rem;
+    }
+
+    .button{
+        @include lastButton;
+    }
+
+}
+
+
+
+.contact{
+    padding: 2rem 0 5rem 0;
+    .contact-wrap{
+        padding: 0 2%;
+        h2{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            @include large{
+                width: 80%;
+                display: block;
+                margin: auto;
+            } 
+        }
+
+    }
+    
+}
+
+.single main{
+    padding: 0 2%;
+    @include large{
+        padding-right: 6%;
+    }
+
+    article{
+        @include mLarge{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 5rem;
+            align-items: center;
+            grid-gap: 2rem;
+        }
+        h3{
+            padding-top: 5rem;
+            padding-bottom: 0;
+            text-align: center;
+        }
+
+        .post-categories{
+            text-align: center;
+            margin-bottom: 5rem;
+            grid-column: -1/1;
+            @include mLarge{
+                margin-bottom: 0;
+            }
+        }
+    
+        .single-img{
+            padding-bottom: 2rem;
+        }
+    
+        .single-content{
+            padding-bottom: 5rem;
+            grid-column: -1/1;
+            @include mLarge{
+                width: 70%;
+                margin: 0 auto;
+                text-align: center;
+            }       
+        }
+
+        nav{
+            grid-column: -1/1;
+        }
+    }
+
+    .button{
+        @include lastButton;
+    }
+}
+
+.page{
+    .contact-header{
+        padding: 0 2% 0 0;
+        p{
+            padding-top: 3.5rem;
+            padding-left: 1rem;
+            @include medium{
+                padding-top: 4rem;
+                padding-left: 2rem;
+            }
+            @include large{
+                padding-top: 5rem;
+            }
+            @include xLarge{
+                padding-top: 8rem;
+            }
+        }
+        
+    }
+
+    .contact-message{
+        max-width: 800px;
+        display: block;
+        margin: 0 auto 2rem auto;
+        padding-left: 2%;
+        @include medium{
+            margin-top: 3rem;
+        }
+        @include large{
+            margin-top: 4rem;
+        }
+        @include mLarge{
+            margin-top: 5rem;
+        }
+        @include xLarge{
+            margin-top: 6rem;
+        }
+    }
+
+    form{
+
+        margin-bottom: 8rem;
+
+        nf-section{
+            display: none;
+        }
+        .nf-form-content {
+            padding: 0 2%;
+            max-width: 800px;
+
+            input[type=button]{
+                width: 100%;
+                max-width: 800px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .nf-response-msg{
+        max-width: 800px;
+        margin: auto;
+        padding: 0 2%;
+        margin-bottom: 8rem;
+    }
+
+}
+
+footer{
+    padding: 3rem 0;
+    background: $color-main;
+    .footer-wrap{
+        padding: 0 2%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        
+        .footer-info{
+            text-align: right;
+        }
+    }
+    
+}

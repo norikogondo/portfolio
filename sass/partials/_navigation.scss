@@ -1,0 +1,148 @@
+nav{
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    li{
+        border: none;
+
+        a{
+            text-decoration: none;
+        }
+
+    }
+
+
+
+}
+
+.button{
+    @include button;
+}
+
+nav{
+    a{
+    span{
+        @include visuallyHideen;
+    }
+
+        &[href^="https://instagram"]:before{
+            font-family: "Font Awesome 5 Brands";
+            content: '\f16d';
+        }
+        &[href^="https://dribbble"]:before{
+            font-family: "Font Awesome 5 Brands";
+            content: '\f17d';
+        }
+        &[href^="https://linkedin"]:before{
+            font-family: "Font Awesome 5 Brands";
+            content: '\f0e1';
+        }
+    }
+}
+
+nav.pagination{
+    grid-column: -1/1;
+    background-color: #f7f9fa;
+    margin: 0 2%;
+    @include large{
+        margin-top: 3rem;
+    }
+    
+    ul.page-numbers{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+
+        li a{
+            @include underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.work{
+    .post-categories{
+                
+        li a{
+            @include underline;
+            display: block;
+            text-align: right;
+            margin-top: 2rem;
+            &:hover{
+                text-decoration: none;
+            }
+
+        }
+    }
+}
+
+.blog main{
+
+    article{
+        .post-info{
+
+            .post-categories{
+                text-align: right;
+
+                li a{
+                    @include underline;
+                    display: block;
+                    text-align: right;
+                    
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+    
+}
+
+.single{
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        @include large{
+            justify-content: center;
+            gap: 2rem
+        }
+        @include mLarge{
+            margin-bottom: 0;
+        }
+
+        a{
+            @include underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .post-categories{
+        a{
+            @include underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+

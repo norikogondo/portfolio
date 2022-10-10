@@ -1,0 +1,70 @@
+@mixin medium {
+    @media (min-width: ($medium)) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: ($large)) {
+        @content;
+    }
+}
+
+@mixin mLarge {
+    @media (min-width: ($mLarge)) {
+        @content;
+    }
+}
+
+@mixin xLarge {
+    @media (min-width: ($xLarge)) {
+        @content;
+    }
+}
+
+@mixin button{
+    padding: .5rem;
+    border: $border-standard;
+    border-radius: 2rem;
+    text-align: center;
+    letter-spacing: .15rem;
+    font-weight: 700;
+    display: block;
+    margin: 3rem auto 0 auto;
+    width: 180px;
+    transition: all .5s;
+    &:hover{
+        background: $color-main;
+        color: white;
+    }
+}
+
+@mixin visuallyHideen{
+
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+}
+
+@mixin underline{
+    text-decoration: underline;
+    text-underline-offset:0.3em;
+}
+
+@mixin postGrid{
+    padding: 0 6% 0 2%;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+@mixin lastButton{
+    grid-column: -1/1;
+    margin-bottom: 8rem;
+}
