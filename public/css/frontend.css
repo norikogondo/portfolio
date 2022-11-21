@@ -709,6 +709,7 @@ img {
 }
 @media (min-width: 1080px) {
   .about .about-wrap .about-info {
+    max-width: 1000px;
     padding-top: 6rem;
   }
 }

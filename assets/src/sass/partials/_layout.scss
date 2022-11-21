@@ -1,398 +1,375 @@
-.hero-header{
-    .hero-wrap{
+.hero-header {
+    .hero-wrap {
         padding: 0 2%;
         position: relative;
         // @include large{
         //     padding: 0 0 0 2%;
         // }
 
-        .hero-title{
+        .hero-title {
             padding-top: 5rem;
         }
-        .hero-message{
+        .hero-message {
             padding-top: 4rem;
-            @include large{
+            @include large {
                 width: 400px;
                 margin-left: 5rem;
                 padding-top: 2rem;
             }
-            @include mLarge{
+            @include mLarge {
                 margin-left: 7rem;
                 width: 500px;
             }
-            @include xLarge{
+            @include xLarge {
                 margin-left: 12rem;
             }
         }
-        .hero-jp{
+        .hero-jp {
             position: relative;
             bottom: 240px;
             left: 90%;
-            @include medium{
+            @include medium {
                 left: 80%;
                 bottom: 160px;
             }
-            @include large{
+            @include large {
                 left: 74%;
                 bottom: 200px;
             }
-            @include xLarge{
+            @include xLarge {
                 left: 70%;
             }
-
         }
     }
 }
 
-.about{
+.about {
     margin-bottom: 10rem;
-    @include large{
+    @include large {
         margin-top: 10rem;
     }
-    @include xLarge{
+    @include xLarge {
         margin-top: 15rem;
         margin-bottom: 15rem;
     }
-    .about-wrap{
+    .about-wrap {
         padding: 0 2%;
-        @include mLarge{
+        @include mLarge {
             display: flex;
         }
-        .about-info{
-            @include mLarge{
+        .about-info {
+            @include mLarge {
+                max-width: 1000px;
                 padding-top: 6rem;
             }
-            h2{
-                @include large{
+            h2 {
+                @include large {
                     padding-left: 6rem;
                 }
             }
-            p{
-                @include large{
+            p {
+                @include large {
                     padding-left: 10rem;
                     padding-right: 4rem;
                 }
             }
         }
-        
     }
-
 }
 
-.work{
+.work {
     padding: 0 2%;
-    @include medium{
+    @include medium {
         margin-bottom: 15rem;
     }
 
-
-    h2{
+    h2 {
         text-align: center;
         padding-bottom: 3rem;
     }
 
-    .button{
+    .button {
         margin-bottom: 8rem;
-        @include large{
+        @include large {
             margin-top: 6rem;
         }
     }
 
-    article{
+    article {
         margin-bottom: 5rem;
-        @include large{
+        @include large {
             display: flex;
             align-items: center;
             margin-bottom: 0;
         }
-    
-        div.blog-img{
-            @include large{
+
+        div.blog-img {
+            @include large {
                 width: 50%;
             }
         }
-        div.post-info{
-            @include large{
+        div.post-info {
+            @include large {
                 width: 50%;
                 padding: 0 4%;
             }
-
         }
-    
-        .blog-img{
+
+        .blog-img {
             margin-bottom: 2rem;
-            @include large{
+            @include large {
                 margin-bottom: 0;
             }
         }
     }
-    
-    article:nth-child(even) div:nth-of-type(1){
-        @include large{
+
+    article:nth-child(even) div:nth-of-type(1) {
+        @include large {
             order: 1;
         }
-    
     }
-
-
 }
 
-.blog main{
+.blog main {
     margin-bottom: 8rem;
 
-    @include large{
+    @include large {
         @include postGrid;
     }
-    @include mLarge{
+    @include mLarge {
         grid-gap: 4rem;
-    } 
+    }
 
-    article{
+    article {
         padding: 0 2% 5rem 2%;
-        @include large{
+        @include large {
             padding-bottom: 0;
         }
-        .post-info{
-            h3{
+        .post-info {
+            h3 {
                 padding-bottom: 0;
                 padding-top: 1rem;
             }
-
-
         }
     }
-
-    
 }
 
-.work-header{
+.work-header {
     grid-column: -1/1;
     justify-content: end;
     margin: 0;
-    @include medium{
+    @include medium {
         margin-bottom: 5rem;
     }
-    @include large{
+    @include large {
         margin-bottom: 6rem;
     }
-    @include mLarge{
+    @include mLarge {
         margin-bottom: 7rem;
     }
-    @include xLarge{
+    @include xLarge {
         margin-bottom: 8rem;
     }
-    p{
+    p {
         padding-top: 3.5rem;
         padding-left: 1rem;
-        @include medium{
+        @include medium {
             padding-top: 4rem;
             padding-left: 2rem;
         }
-        @include large{
+        @include large {
             padding-top: 5rem;
         }
-        @include xLarge{
+        @include xLarge {
             padding-top: 8rem;
         }
     }
-
-        
 }
 
-.category main{
-    @include large{
+.category main {
+    @include large {
         @include postGrid;
     }
 
-    .work-header{
-        p{
+    .work-header {
+        p {
             padding-top: 2rem;
-            @include large{
+            @include large {
                 padding-top: 5rem;
             }
-            @include mLarge{
+            @include mLarge {
                 padding-top: 7rem;
             }
-            @include xLarge{
+            @include xLarge {
                 padding-top: 9rem;
             }
         }
 
-        h2{
-           padding: 0 0 0 1rem; 
-           @include medium{
+        h2 {
+            padding: 0 0 0 1rem;
+            @include medium {
                 padding-left: 2rem;
             }
         }
     }
 
-    section{
+    section {
         padding: 0 2%;
         margin-bottom: 2rem;
     }
 
-    .button{
+    .button {
         @include lastButton;
     }
-
 }
 
-
-
-.contact{
+.contact {
     padding: 2rem 0 5rem 0;
-    .contact-wrap{
+    .contact-wrap {
         padding: 0 2%;
-        h2{
+        h2 {
             text-align: center;
         }
 
-        p{
+        p {
             text-align: center;
-            @include large{
+            @include large {
                 width: 80%;
                 display: block;
                 margin: auto;
-            } 
+            }
         }
-
     }
-    
 }
 
-.single main{
+.single main {
     padding: 0 2%;
-    @include large{
+    @include large {
         padding-right: 6%;
     }
 
-    article{
-        @include mLarge{
+    article {
+        @include mLarge {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             margin-top: 5rem;
             align-items: center;
             grid-gap: 2rem;
         }
-        h3{
+        h3 {
             padding-top: 5rem;
             padding-bottom: 0;
             text-align: center;
         }
 
-        .post-categories{
+        .post-categories {
             text-align: center;
             margin-bottom: 5rem;
             grid-column: -1/1;
-            @include mLarge{
+            @include mLarge {
                 margin-bottom: 0;
             }
         }
-    
-        .single-img{
+
+        .single-img {
             padding-bottom: 2rem;
         }
-    
-        .single-content{
+
+        .single-content {
             padding-bottom: 5rem;
             grid-column: -1/1;
-            @include mLarge{
+            @include mLarge {
                 width: 70%;
                 margin: 0 auto;
                 text-align: center;
-            }       
+            }
         }
 
-        nav{
+        nav {
             grid-column: -1/1;
         }
     }
 
-    .button{
+    .button {
         @include lastButton;
     }
 }
 
-.page{
-    .contact-header{
+.page {
+    .contact-header {
         padding: 0 2% 0 0;
-        p{
+        p {
             padding-top: 3.5rem;
             padding-left: 1rem;
-            @include medium{
+            @include medium {
                 padding-top: 4rem;
                 padding-left: 2rem;
             }
-            @include large{
+            @include large {
                 padding-top: 5rem;
             }
-            @include xLarge{
+            @include xLarge {
                 padding-top: 8rem;
             }
         }
-        
     }
 
-    .contact-message{
+    .contact-message {
         max-width: 800px;
         display: block;
         margin: 0 auto 2rem auto;
         padding-left: 2%;
-        @include medium{
+        @include medium {
             margin-top: 3rem;
         }
-        @include large{
+        @include large {
             margin-top: 4rem;
         }
-        @include mLarge{
+        @include mLarge {
             margin-top: 5rem;
         }
-        @include xLarge{
+        @include xLarge {
             margin-top: 6rem;
         }
     }
 
-    form{
-
+    form {
         margin-bottom: 8rem;
 
-        nf-section{
+        nf-section {
             display: none;
         }
         .nf-form-content {
             padding: 0 2%;
             max-width: 800px;
 
-            input[type=button]{
+            input[type="button"] {
                 width: 100%;
                 max-width: 800px;
                 cursor: pointer;
             }
         }
-
     }
 
-    .nf-response-msg{
+    .nf-response-msg {
         max-width: 800px;
         margin: auto;
         padding: 0 2%;
         margin-bottom: 8rem;
     }
-
 }
 
-footer{
+footer {
     padding: 3rem 0;
     background: $color-main;
-    .footer-wrap{
+    .footer-wrap {
         padding: 0 2%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        
-        .footer-info{
+
+        .footer-info {
             text-align: right;
         }
     }
-    
 }
