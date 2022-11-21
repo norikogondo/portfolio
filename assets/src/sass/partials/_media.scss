@@ -4,7 +4,7 @@ img {
 }
 
 .hero-header {
-  background-image: url(images/hero-img.jpg);
+  background-image: url('../images/hero-img.jpg');
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: right top;
@@ -22,7 +22,7 @@ img {
 }
 
 .work-header {
-  background-image: url(images/work-img.jpg);
+  background-image: url('../images/work-img.jpg');
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: right top;
@@ -43,7 +43,7 @@ img {
 }
 
 .about {
-  background-image: url(images/about-bg.jpg);
+  background-image: url('../images/about-bg.jpg');
   background-repeat: no-repeat;
   background-size: 180%;
   background-position: center 3rem;
@@ -65,13 +65,13 @@ img {
 }
 
 .contact {
-  background-image: url(images/contact-bg.jpg);
+  background-image: url('../images/contact-bg.jpg');
   background-repeat: no-repeat;
   background-position: center 0;
 }
 
 .contact-header {
-  background-image: url(images/contact-img.jpg);
+  background-image: url('../images/contact-img.jpg');
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: right top;
