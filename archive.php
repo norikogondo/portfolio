@@ -4,8 +4,8 @@ get_header();
 
 
 <div class="work-header">
-	<p>WORK</p>
-	<h2><?php the_archive_title(); ?></h2>
+    <p>WORK</p>
+    <h2><?php the_archive_title(); ?></h2>
 </div>
 
 <?php
@@ -20,10 +20,12 @@ if (have_posts()) :
 ?>
 
 <section>
-	<div class="category-post-img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
-	<h3 class="category-post-title"><a href="<?php the_permalink(); ?>"><?php echo esc_html(get_the_title()); ?></a>
-	</h3>
-	<div class="category-post-excerpt"><?php the_excerpt(); ?></div>
+    <div class="category-post-img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
+    <h3 class="category-post-title"><a href="<?php the_permalink(); ?>"><?php echo esc_html(get_the_title()); ?></a>
+    </h3>
+    <div class="category-post-excerpt">
+        <?php echo mb_substr(strip_tags($post->post_content), 0, 100) . '...'; ?>
+    </div>
 </section>
 
 <?php
