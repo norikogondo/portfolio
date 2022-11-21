@@ -14,26 +14,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 // Import variables
-@import "partials/variables";
-@import "partials/mixins";
+@import './partials/variables';
+@import './partials/mixins';
 
 /* RESET ========================== */
-@import "partials/reset";
+@import './partials/reset';
 
 /* TYPOGRAPHY ===================== */
-@import "partials/typography";
+@import './partials/typography';
 
 /* HEADER FOOTER ===================== */
-@import "partials/header-footer";
+@import './partials/header-footer';
 
 /* NAVIGATION ===================== */
-@import "partials/navigation";
+@import './partials/navigation';
 
 /* MEDIA ===================== */
-@import "partials/media";
+@import './partials/media';
 
 /* LAYOUT ===================== */
-@import "partials/layout";
+@import './partials/layout';
 
 /* ACCESSIBILITY ===================== */
-@import "partials/accessibility";
+@import './partials/accessibility';
