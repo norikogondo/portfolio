@@ -18,10 +18,10 @@
 			</a>
 		</h1>
 
-		<img src="<?php echo get_template_directory_uri(); ?>/images/open.png" alt="OPEN" class="open" id="open_btn">
+		<img src="<?php echo get_template_directory_uri(); ?>/public/images/open.png" alt="OPEN" class="open" id="open_btn">
 
 		<div class="site-navigation">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/close.png" alt="CLOSE" class="close"
+			<img src="<?php echo get_template_directory_uri(); ?>/public/images/close.png" alt="CLOSE" class="close"
 				id="close_btn">
 
 			<?php
