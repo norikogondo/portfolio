@@ -24,6 +24,7 @@ function noriko_theme_scripts_styles()
 {
    wp_enqueue_style('base_style', get_template_directory_uri() . '/public/css/frontend.css', array(), '1.0.0');
 
+   wp_enqueue_script('custom_script', get_template_directory_uri() . '/public/js/frontend.js', array(), '1.0.0');
    // フォントが２つ以上の場合
    wp_enqueue_style('noriko_theme_google_fonts', 'https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=League+Script&family=Mukta+Mahee:wght@400;600;700', array(), null);
 

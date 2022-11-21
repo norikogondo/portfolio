@@ -1,7 +1,6 @@
 import '../sass/frontend.scss'
 
-import './sample';
+import sample from './sample'
 
-console.log('helo')
 
 sample()

@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ sample)
 /* harmony export */ });
 function sample() {
-  console.log("hello");
+  console.log("sample");
 }
 
 /***/ }),
@@ -97,8 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sample__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sample */ "./assets/src/js/sample.js");
 
 
-console.log('helo');
-sample();
+(0,_sample__WEBPACK_IMPORTED_MODULE_1__["default"])();
 })();
 
 /******/ })()
