@@ -19,7 +19,7 @@
 		<div class="about-img"><img src="<?php echo get_template_directory_uri(); ?>/public/images/about-img.jpg" alt="ABOUT">
 		</div>
 		<div class="about-info">
-			<h2>ABOUT ME</h2>
+			<h2>ABOUT</h2>
 			<div class="about-text">
 				<p>Earned my Bachelor's Degree in economics. Through a variety of work experiences, I noticed that both user interface and user experience design could play a crucial role for any type of businesses to succeed in contemporary society. That is the biggest reason why I switched my career to a web designer in 2016, and have worked on websites, app design, banners, ads, and  graphics for small and mid-sized companies in Japan, as well as in Canada recently. I have been driven to digital design, and currently pursuing my career as a UX/UI designer.</p>
 
