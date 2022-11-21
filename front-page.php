@@ -36,7 +36,7 @@
     'post_type'      =>  'post',
     'tag_slug__and' => array('favorite',),
     'orderby'        => 'menu_order date',
-    'order'          => 'ASC',
+    'order'          => 'DESC',
   );
 
   $my_query = new WP_Query($args);
