@@ -21,11 +21,8 @@
 		<div class="about-info">
 			<h2>ABOUT</h2>
 			<div class="about-text">
-				<p>I am a UX/UI designer from Japan, and currently living in Vancouver, Canada.</p>
-				<p>I have had various job experiences such as a recruitment consultant and a secretary to members of the
-					Diet in Japan before my current career.</p>
-				<p>Since I learned a lot in many industries, I've been utilizing my experience in creating visual assets
-					and web products for enhancing clients’ business activities such as management and branding.</p>
+				<p>Earned my Bachelor's Degree in economics. Through a variety of work experiences, I noticed that both user interface and user experience design could play a crucial role for any type of businesses to succeed in contemporary society. That is the biggest reason why I switched my career to a web designer in 2016, and have worked on websites, app design, banners, ads, and  graphics for small and mid-sized companies in Japan, as well as in Canada recently. I have been driven to digital design, and currently pursuing my career as a UX/UI designer.</p>
+
 			</div>
 		</div>
 		<!-- <a href="#" class="button">ABOUT</a> -->
