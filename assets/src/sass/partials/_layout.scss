@@ -1,45 +1,82 @@
-.hero-header {
-    .hero-wrap {
-        padding: 0 2%;
-        position: relative;
-        // @include large{
-        //     padding: 0 0 0 2%;
-        // }
+#typeAnimation {
+}
+.hero-header-content-koncha {
+    font-size: 12vw;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    @include large {
+        font-size: 5rem;
+    }
+    @include mLarge {
+        font-size: 6rem;
+    }
+}
+.hero-header-content-hello {
+    font-size: 20vw;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    @include large {
+        font-size: 8rem;
+    }
+    @include mLarge {
+        font-size: 10rem;
+    }
+}
+.hero-header-content-imNoriko {
+    font-size: 3.5rem;
 
-        .hero-title {
-            padding-top: 5rem;
+    font-size: 10vw;
+    padding-left: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    @include large {
+        font-size: 5rem;
+    }
+    @include mLarge {
+        font-size: 6rem;
+    }
+}
+.hero-header-content {
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+
+    .typed-cursor {
+        font-size: 12vw;
+        vertical-align: super;
+        @include large {
+            font-size: 6rem;
+            vertical-align: super;
         }
-        .hero-message {
-            padding-top: 4rem;
-            @include large {
-                width: 400px;
-                margin-left: 5rem;
-                padding-top: 2rem;
-            }
-            @include mLarge {
-                margin-left: 7rem;
-                width: 500px;
-            }
-            @include xLarge {
-                margin-left: 12rem;
-            }
-        }
-        .hero-jp {
-            position: relative;
-            bottom: 240px;
-            left: 90%;
-            @include medium {
-                left: 80%;
-                bottom: 160px;
-            }
-            @include large {
-                left: 74%;
-                bottom: 200px;
-            }
-            @include xLarge {
-                left: 70%;
-            }
-        }
+    }
+}
+
+.hero-jp {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    transform: translate(0, -50%);
+    white-space: nowrap;
+    @include large {
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hero-message {
+    width: 70%;
+    position: absolute;
+    top: 46%;
+    transform: translate(-50% 0%);
+    left: 2.5%;
+
+    @include large {
+        top: 65%;
+        left: 35%;
+        width: 40%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -50,7 +87,7 @@
     }
     @include xLarge {
         margin-top: 15rem;
-        margin-bottom: 15rem;
+        margin-bottom: 10rem;
     }
     .about-wrap {
         padding: 0 2%;
@@ -369,6 +406,11 @@ footer {
 
         .footer-info {
             text-align: right;
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
