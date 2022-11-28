@@ -747,7 +747,7 @@ img {
 }
 @media (min-width: 840px) {
   .hero-jp {
-    top: 74%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
