@@ -2797,6 +2797,11 @@ dot-case@^2.1.0:
   dependencies:
     no-case "^2.2.0"
 
+dotenv@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
+
 download@^6.2.2:
   version "6.2.5"
   resolved "https://registry.npmjs.org/download/-/download-6.2.5.tgz"
@@ -7611,7 +7616,7 @@ type-fest@^0.8.1:
 
 typed.js@^2.0.12:
   version "2.0.12"
-  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.12.tgz#246aff074c8e18d32ec27acb7be15094ac0bc0e1"
+  resolved "https://registry.npmjs.org/typed.js/-/typed.js-2.0.12.tgz"
   integrity sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==
 
 typedarray-to-buffer@^3.1.5:
