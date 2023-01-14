@@ -4,6 +4,7 @@
  * @since 1.0.0
  */
 const path = require('path')
+require('dotenv').config()
 
 // Paths to find our files and provide BrowserSync functionality.
 const projectPaths = {
@@ -25,7 +26,8 @@ const projectFiles = {
     mode: 'proxy', // proxy | server
     server: { baseDir: ['public'] }, // can be ignored if using proxy
     // ここのproxyを変更
-    proxy: 'http://localhost:10003/',
+    // proxy: 'http://norikoportfolio.local/',
+    proxy: process.env.local,
     // BrowserSync will automatically watch for changes to any files connected to our entry,
     // including both JS and Sass files. We can use this property to tell BrowserSync to watch
     // for other types of files, in this case PHP files, in our project.
