@@ -81,7 +81,7 @@
 
 <section class="contact">
     <div class="contact-wrap">
-        <h2>CONTACT</h2>
+        <h2>CONTACT test</h2>
         <p>Ask me anything or let me know an idea you would like to collaborate with me.</p>
         <p>I will get back to you ASAP.</p>
         <a href="<?php the_permalink(21); ?>" class="button">CONTACT</a>
