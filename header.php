@@ -7,6 +7,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 	<?php wp_head(); ?>
 </head>
 
@@ -21,8 +22,7 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/public/images/open.png" alt="OPEN" class="open" id="open_btn">
 
 		<div class="site-navigation">
-			<img src="<?php echo get_template_directory_uri(); ?>/public/images/close.png" alt="CLOSE" class="close"
-				id="close_btn">
+			<img src="<?php echo get_template_directory_uri(); ?>/public/images/close.png" alt="CLOSE" class="close" id="close_btn">
 
 			<?php
 			wp_nav_menu(array(
