@@ -10,9 +10,6 @@
         I'm a UX/UI designer in Canada and Japan, passionate about contributing to your business
         with creative design, identities and experiences.
     </p>
-    <p class="hero-jp">
-        デザインの力であなたのビジネスに貢献します。
-    </p>
 
 
     <!-- <div class="hero-wrap">
@@ -35,8 +32,7 @@
 
 <section class="about">
     <div class="about-wrap">
-        <div class="about-img"><img src="<?php echo get_template_directory_uri(); ?>/public/images/about-img.jpg"
-                alt="ABOUT">
+        <div class="about-img"><img src="<?php echo get_template_directory_uri(); ?>/public/images/about-img.jpg" alt="ABOUT">
         </div>
         <div class="about-info">
             <h2>ABOUT</h2>
