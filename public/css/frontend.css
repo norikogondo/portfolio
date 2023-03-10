@@ -1167,3 +1167,7 @@ footer .footer-wrap .footer-info a:hover {
     display: block;
   }
 }
+
+.is-vertically-aligned-top h4 {
+  line-height: 1.2;
+}
