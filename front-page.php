@@ -4,35 +4,17 @@
     <div class="hero-header-content">
         <span id='typeAnimation'></span>
     </div>
-
     <p class="hero-jp">デザインの力であなたのビジネスに貢献します。</p>
     <p class="hero-message">
         I'm a UX/UI designer in Canada and Japan, passionate about contributing to your business
         with creative design, identities and experiences.
     </p>
-
-
-    <!-- <div class="hero-wrap">
-        <div class="wrapTypeAnimation">
-            <div class="hero-title">
-                <p>HELLO,</p>
-                <p>I’M NORIKO.</p>
-            </div> -->
-    <!-- <span class="hero-title" id='typeAnimation'></span> -->
-    <!-- </div> -->
-
-    <!-- <span class="hero-title" id='typeAnimation'></span> -->
-
-    <!-- <p class="hero-message">I'm a UX/UI designer in Canada and Japan, passionate about contributing to your business
-            with creative design, identities and experiences.</p>
-        <p class="hero-jp">デザインの力であなたのビジネスに貢献します。</p>
-    </div>  -->
-
 </section>
 
 <section class="about">
     <div class="about-wrap">
-        <div class="about-img"><img src="<?php echo get_template_directory_uri(); ?>/public/images/about-img.jpg" alt="ABOUT">
+        <div class="about-img"><img src="<?php echo get_template_directory_uri(); ?>/public/images/about-img.jpg"
+                alt="ABOUT">
         </div>
         <div class="about-info">
             <h2>ABOUT</h2>
@@ -47,7 +29,7 @@
 
             </div>
         </div>
-        <!-- <a href="#" class="button">ABOUT</a> -->
+
     </div>
 </section>
 
