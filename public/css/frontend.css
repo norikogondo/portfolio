@@ -440,10 +440,22 @@ nav li a {
   margin: 3rem auto 0 auto;
   width: 180px;
   transition: all 0.5s;
+  margin-top: 30px !important;
 }
 .button:hover {
   background: #35342c;
   color: white;
+}
+.button--nospace {
+  display: inline-block;
+  width: initial;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media (min-width: 840px) {
+  .button--nospace {
+    margin: inherit;
+  }
 }
 
 nav a span {
@@ -1166,4 +1178,8 @@ footer .footer-wrap .footer-info a:hover {
   .pc_only {
     display: block;
   }
+}
+
+.is-vertically-aligned-top h4 {
+  line-height: 1.2;
 }
