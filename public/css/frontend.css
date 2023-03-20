@@ -44,7 +44,7 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+  margin: 0 0 1.5rem 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -105,7 +105,7 @@ body {
   font-family: "Mukta Mahee", helvetica, arial, sans-serif;
   color: #35342c;
   letter-spacing: 0.1rem;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 h2 {
@@ -1181,5 +1181,12 @@ footer .footer-wrap .footer-info a:hover {
 }
 
 .is-vertically-aligned-top h4 {
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.2;
 }
