@@ -5,8 +5,7 @@
     </div>
     <p class="hero-jp">デザインの力であなたのビジネスに貢献します。</p>
     <p class="hero-message">
-        I'm a UX/UI Designer and a Product Designer in Canada and Japan, passionate about contributing to your business
-        through creative designs, branding, and user experiences.
+        <?php the_field('front_hero_text'); ?>
     </p>
 </section>
 
@@ -19,16 +18,10 @@
             <h2>ABOUT</h2>
             <div class="about-text">
                 <p>
-                    I have earned a Bachelor's degree in Economics. Through various work experiences, I have come to
-                    realize that user interface and user experience design can potentially play a crucial role in the
-                    success of any type of business in contemporary society. That is the main reason why I switched to a
-                    career in UX/UI design in 2016, and since then, I have been involved in creating websites, apps,
-                    graphics, and digital marketing for small and mid-sized companies in Japan and Canada. I am driven
-                    by digital design and am currently pursuing my career as a UX/UI designer or a product designer.</p>
-                ​
+                    <?php the_field('front_about'); ?>
+                </p>
             </div>
         </div>
-        ​
     </div>
 </section>
 
