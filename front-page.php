@@ -44,6 +44,7 @@
             get_template_part('template-parts/content');
         endwhile;
     endif;
+    wp_reset_postdata();
     ?>
 
     <a href="<?php the_permalink(25); ?>" class="button">WORK</a>
@@ -53,8 +54,11 @@
 <section class="contact">
     <div class="contact-wrap">
         <h2>CONTACT</h2>
-        <p>Feel free to ask me anything or let me know any ideas you would like to collaborate on.</p>
-        <p>I will get back to you as soon as possible.</p>
+        <p>
+            <?php the_field('front_contact'); ?>
+        </p>
+        <!-- <p>Feel free to ask me anything or let me know any ideas you would like to collaborate on.</p>
+        <p>I will get back to you as soon as possible.</p> -->
         <a href="<?php the_permalink(21); ?>" class="button">CONTACT</a>
     </div>
 </section>
