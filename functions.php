@@ -3,8 +3,7 @@
 // Change all instances of THEMENAME to your theme name.
 if (!function_exists('noriko_theme_setup')) :
 
-   function noriko_theme_setup()
-   {
+   function noriko_theme_setup() {
       add_theme_support('automatic-feed-links');
       add_theme_support('title-tag');
       add_theme_support('post-thumbnails');
@@ -20,11 +19,10 @@ endif;
 
 add_action('after_setup_theme', 'noriko_theme_setup');
 
-function noriko_theme_scripts_styles()
-{
-   wp_enqueue_style('base_style', get_template_directory_uri() . '/public/css/frontend.css', array(), '1.0.0');
+function noriko_theme_scripts_styles() {
+   wp_enqueue_style('base_style', get_template_directory_uri() . '/public/css/frontend.css', array(), date("YmdHi"));
 
-   wp_enqueue_script('custom_script', get_template_directory_uri() . '/public/js/frontend.js', array(), '1.0.0');
+   wp_enqueue_script('custom_script', get_template_directory_uri() . '/public/js/frontend.js', array(), date("YmdHi"));
    // フォントが２つ以上の場合
    wp_enqueue_style('noriko_theme_google_fonts', 'https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=League+Script&family=Mukta+Mahee:wght@400;600;700', array(), null);
 
@@ -33,8 +31,7 @@ function noriko_theme_scripts_styles()
    wp_enqueue_style('noriko_theme_font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 }
 
-function imagepassshort($arg)
-{
+function imagepassshort($arg) {
    $content = str_replace('"images/', '"' . get_bloginfo('template_directory') . '/images/', $arg);
    return $content;
 }
@@ -57,8 +54,7 @@ add_filter('show_admin_bar', '__return_false');
 
 remove_action('add_option_new_admin_email', 'update_option_new_admin_email');
 remove_action('update_option_new_admin_email', 'update_option_new_admin_email');
-function wpdocs_update_option_new_admin_email($old_value, $value)
-{
+function wpdocs_update_option_new_admin_email($old_value, $value) {
 
    update_option('admin_email', $value);
 }
