@@ -11,8 +11,7 @@
 
 <section class="about">
     <div class="about-wrap">
-        <div class="about-img"><img src="<?php echo get_template_directory_uri(); ?>/public/images/about-img.jpg"
-                alt="ABOUT">
+        <div class="about-img"><img src="<?php echo get_template_directory_uri(); ?>/public/images/about-img.jpg" alt="ABOUT">
         </div>
         <div class="about-info">
             <h2>ABOUT</h2>
@@ -27,6 +26,9 @@
 
 <section class="work">
     <h2>WORK</h2>
+    <div class="work_front_description">
+        <?php the_field('front_work'); ?>
+    </div>
     <?php
     $args = array(
         'post_type'      =>  'post',
