@@ -19,14 +19,14 @@ if (have_posts()) :
         the_post();
 ?>
 
-<section>
-    <div class="category-post-img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
-    <h3 class="category-post-title"><a href="<?php the_permalink(); ?>"><?php echo esc_html(get_the_title()); ?></a>
-    </h3>
-    <div class="category-post-excerpt">
-        <?php echo mb_substr(strip_tags($post->post_content), 0, 100) . '...'; ?>
-    </div>
-</section>
+        <section>
+            <div class="category-post-img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
+            <h3 class="category-post-title"><a href="<?php the_permalink(); ?>"><?php echo esc_html(get_the_title()); ?></a>
+            </h3>
+            <div class="category-post-excerpt">
+                <?php echo mb_substr(strip_tags($post->post_content), 0, 100) . '...'; ?>
+            </div>
+        </section>
 
 <?php
     endwhile;
