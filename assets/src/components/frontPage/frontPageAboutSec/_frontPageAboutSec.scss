@@ -1,0 +1,68 @@
+.frontPageAboutSec {
+    position: relative;
+
+    @include tab {
+        margin-top: 300px;
+    }
+}
+
+.frontPageAboutSec_contents {
+    position: relative;
+    z-index: 1;
+    padding-top: 250px;
+    @include tab {
+        padding-top: initial;
+        display: flex;
+    }
+
+    @include tab {
+        padding: 80px 0;
+    }
+}
+.frontPageAboutSec_contents_left {
+    @include tab {
+        width: 40%;
+    }
+
+    @include pc {
+        width: 28%;
+    }
+}
+.frontPageAboutSec_contents_right {
+    @include tab {
+        width: 60%;
+        padding-left: 100px;
+    }
+
+    @include pc {
+        padding-left: 150px;
+        width: 72%;
+    }
+}
+
+.frontPageAboutSec_profileImg {
+    width: 280px;
+    position: absolute;
+    top: -10%;
+    @include pc {
+        width: 350px;
+    }
+}
+
+.frontPageAboutSec_paragraph {
+    margin-top: 50px;
+}
+
+.frontPageAboutSec_bkImage {
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    background-image: url("../images/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    background-position: center;
+    @include tab {
+        height: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+$tab: 767px;
+$pc: 1200px;
+$mb: 614px;
+$sp: 370px;
+
+@mixin tab {
+    @media (min-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+
+    @include tab {
+        max-width: 700px;
+    }
+    @include pc {
+        max-width: 1320px;
+        padding-right: 50px;
+    }
+}

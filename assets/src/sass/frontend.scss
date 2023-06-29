@@ -1,24 +1,10 @@
-/*
-Theme Name: NORIKO GONDO
-Author: Noriko Gondo
-Description: My portfolio website.
-Version: .1
-Requires at least: 5.0
-Tested up to: 5.4
-Requires PHP: 5.2
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: noriko_theme
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
+//
+@import "./base/base";
+@import "./base/reset";
 
 // Import variables
 @import "./partials/variables";
 @import "./partials/mixins";
-
-/* RESET ========================== */
-@import "./partials/reset";
 
 /* TYPOGRAPHY ===================== */
 @import "./partials/typography";
@@ -38,12 +24,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* ACCESSIBILITY ===================== */
 @import "./partials/accessibility";
 
-//
-
-// .mob_only {
-// }
-// .pc_only {
-// }
+// new components to refact
+@import "../components/components";
 
 .footer-info_smallTxt {
     line-height: 1.5;

@@ -1,0 +1,16 @@
+@import "./frontPageAboutSec/frontPageAboutSec";
+
+.frontPageHeading {
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    display: block;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #35342c;
+
+    &--about {
+        @include tab {
+            margin-left: -50px;
+        }
+    }
+}
